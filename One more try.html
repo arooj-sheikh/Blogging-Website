@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper-bundle.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="One more try2.css">
+</head>
+
+<body>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="IMAGES/work.jpg" alt="" class="img">
+        <div class="image-data">
+            <h2>Welcome Online Readers</h2>
+            <span class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cum unde temporibus delectus culpa! Corrupti, reiciendis ?</span>
+        </br>
+            <a href="#" class="button">Add Your Own Blog</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+                <img src="IMAGES/cooking.jpg" alt="" class="img">
+            <div class="image-data">
+                <h2>Cooking Blogs</h2>
+                <span class="text">Learn to cook delicious meals with our step-by-step recipes</span>
+            </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img src="IMAGES/travel.jpg" alt="" class="img">
+          <div class="image-data">
+              <h2>Travelling Blogs</h2>
+              <span class="text">Explore new places and discover hidden gems with our travel guides</span>
+          </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="IMAGES/fitness.jpg" alt="" class="img">
+        <div class="image-data">
+            <h2>Fitness Blogs</h2>
+            <span class="text">Get fit and healthy with our workout plans and nutrition tips</span>
+        </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="IMAGES/education.jpg" alt="" class="img">
+      <div class="image-data">
+          <h2>Educational Blogs</h2>
+          <span class="text">Learn new skills and advance your career with our online courses</span>
+      </div>
+      </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
